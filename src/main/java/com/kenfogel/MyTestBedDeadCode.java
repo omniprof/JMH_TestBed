@@ -13,7 +13,7 @@ import org.openjdk.jmh.annotations.Warmup;
 
 @BenchmarkMode(Mode.AverageTime)
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
-public class MyTestBedState {
+public class MyTestBedDeadCode {
 
     @Benchmark
     @Fork(value = 1)
@@ -44,8 +44,7 @@ public class MyTestBedState {
     @Measurement(iterations = 3, time = 2)
     @Warmup(iterations = 3, time = 2)
     public void someCode(StateValues state) {
-        state.a = 8;
-
+        state.c = state.a;
     }
 
     @Benchmark
