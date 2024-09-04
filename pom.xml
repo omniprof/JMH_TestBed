@@ -38,7 +38,7 @@ THE POSSIBILITY OF SUCH DAMAGE.
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>JavaZone JMH TestBed</name>
+    <name>JMH_TestBed</name>
 
     <!--
        This is the demo/sample template build script for building Java benchmarks with JMH.
@@ -79,7 +79,6 @@ THE POSSIBILITY OF SUCH DAMAGE.
     </properties>
 
     <build>
-        <defaultGoal>clean install</defaultGoal> <!--  added -->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
